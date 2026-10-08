@@ -1,6 +1,6 @@
 # Vitalii Bogachev
 
-**Senior AI Engineer — LLM, RAG, MCP.** Moscow, Russia · open to remote.
+**Senior AI Engineer — LLM, RAG, MCP.** Tbilisi, Georgia · open to remote.
 
 I build LLM products that run in production, not demos. Since 2024 I have
 built and operated **BookahTranslate**, a paid AI document-translation SaaS,
