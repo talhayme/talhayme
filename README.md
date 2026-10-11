@@ -14,7 +14,20 @@ provider fallback.
 
 ---
 
-### Open demos
+### Open source
+
+Tools that came out of the production work, each with a write-up that
+includes what went wrong along the way.
+
+| Repository | What it does and what it found |
+|---|---|
+| **[pr-witness](https://github.com/talhayme/pr-witness)** | Runs the *base branch's* tests against a pull request's code — the run CI never does — and shows each rewritten test with its old and new assertion. CLI, GitHub Action with signed evidence, Claude Code plugin; on PyPI. Evaluated on real coding-agent commits with the tool frozen and the labels committed first, misses published with the hits. [Write-up](https://talhayme.github.io/blog/3355-agent-test-edits/) |
+| **[ftgate](https://github.com/talhayme/ftgate)** | Checks that a fine-tuned small model is served the bytes it was trained on. Found Ollama handing models a Go struct dump instead of the tool schema ([ollama#14601](https://github.com/ollama/ollama/issues/14601)) and a pre-fix chat template in Qwen's official GGUFs ([Qwen3#1921](https://github.com/QwenLM/Qwen3/issues/1921)). Its dataset linter shows 43.5% of rows in hermes-function-calling-v1's two `func_calling` configs losing the answer at `max_seq_len=2048`. On PyPI. [Write-up](https://talhayme.github.io/blog/six-tool-calling-datasets/) |
+| **[lora-glossary](https://github.com/talhayme/lora-glossary)** | A 0.5B model fine-tuned on a laptop in 160 seconds for glossary-consistent legal translation: adherence 10.5% → 94.7% (18 of 19 held-out prompts), against GPT-4o-mini's 68.4% on the same prompts. |
+
+---
+
+### Smaller demos
 
 Three standalone repositories, each extracted from a pattern I use in
 production work. All run **offline** — no API key, no network — so they can
