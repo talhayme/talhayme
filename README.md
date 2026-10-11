@@ -6,11 +6,11 @@ I build LLM products that run in production, not demos. Since 2024 I have
 built and operated **BookahTranslate**, a paid AI document-translation SaaS,
 and helped product teams adopt RAG, custom MCP servers and AI coding agents.
 
-My foundation is 6+ years of full-stack TypeScript/Node.js and Python on
-high-load fintech and SaaS platforms — an institutional crypto exchange, a US
-solar SaaS where I was Team Lead — plus a QA-automation background. That is
-why my AI systems ship with evals, regression gates, observability and
-provider fallback.
+My foundation is 13 years of engineering: full-stack TypeScript/Node.js and
+Python on high-load fintech and SaaS platforms — an institutional crypto
+exchange, a US solar SaaS where I was Team Lead — and a start in QA
+automation. That is why my AI systems ship with evals, regression gates,
+observability and provider fallback.
 
 ---
 
